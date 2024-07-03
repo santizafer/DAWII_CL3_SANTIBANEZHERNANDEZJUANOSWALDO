@@ -1,0 +1,7 @@
+.mat-column-residents, .mat-column-dimension {
+  word-break: break-all !important;
+  white-space: nowrap !important;
+  width : 600px !important;
+  white-space: normal !important;
+  word-wrap: break;
+}

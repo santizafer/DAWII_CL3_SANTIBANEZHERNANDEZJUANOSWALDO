@@ -1,0 +1,27 @@
+<h2>Solo los id comprendidos del 25 al 90 y completed = true</h2>
+
+<table mat-table [dataSource]="pregunta3" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="userId">
+      <th mat-header-cell *matHeaderCellDef> UserId </th>
+      <td mat-cell *matCellDef="let element"> {{element.userId}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> ID </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="title">
+      <th mat-header-cell *matHeaderCellDef> Title </th>
+      <td mat-cell *matCellDef="let element"> {{element.title}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="completed">
+      <th mat-header-cell *matHeaderCellDef> Completed </th>
+      <td mat-cell *matCellDef="let element"> {{element.completed}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
