@@ -23,7 +23,6 @@ export class Pregunta3Component {
 
         data.forEach(element => {
           if((element.id >= 25 && element.id <=90) && element.completed == true ) {
-            console.log(element)
             this.result.push(element)
           }
         });

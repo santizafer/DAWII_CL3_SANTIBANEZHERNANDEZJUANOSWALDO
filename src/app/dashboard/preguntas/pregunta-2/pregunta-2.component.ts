@@ -23,7 +23,6 @@ export class Pregunta2Component {
 
         data.results.forEach(element => {
           if(element.type == "Planet") {
-            console.log(element)
             this.result.push(element)
           }
         });
